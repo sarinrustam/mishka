@@ -33,7 +33,94 @@
     </header>
 
     <main class="main">
-      <!-- В задании выделено красным -->
+      <h1 class="main__title">Вязание на заказ</h1>
+      <p class="main__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      <form class="order" action="https://echo.htmlacademy.ru" method="POST">
+
+        <fieldset class="order__section">
+          <legend class="order__title">Тип</legend>
+          <ul class="order__list">
+            <li class="order__item">
+              <input class="order__input visually-hidder" id="for-interior" type="radio" name="interior" value="" checked>
+              <label class="order__label" for="for-interior">Аксессуар для интерьера</label>
+            </li>
+            <li class="order__item">
+              <input class="order__input visually-hidden" id="kids-toy" type="radio" name="toy" value="">
+              <label class="order__label" for="kids-toy">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="order__section">
+          <legend class="order__title">Цвет</legend>
+          <ul class="order__list">
+            <li class="order__item">
+              <input class="order__input visually-hidden" id="color-white" type="checkbox" name="white" value="" checked>
+              <label class="order__label" for="color-white">Белый</label>
+            </li>
+            <li class="order__item">
+              <input class="order__input visually-hidden" id="color-grey" type="checkbox" name="grey" value="" checked>
+              <label class="order__label" for="color-grey">Серый</label>
+            </li>
+            <li class="order__item">
+              <input class="order__input visually-hidden" id="color-tiffany" type="checkbox" name="tiffany" value="">
+              <label class="order__label" for="color-tiffany">«Тиффани»</label>
+            </li>
+            <li class="order__item">
+              <input class="order__input visually-hidden" id="color-black" type="checkbox" name="black" value="">
+              <label class="order__label" for="color-black">Черный</label>
+            </li>
+            <li class="order__item">
+              <input class="order__input visually-hidden" id="color-pink" type="checkbox" name="pink" value="">
+              <label class="order__label" for="color-pink">Розовый</label>
+            </li>
+            <li class="order__item">
+              <input class="order__input visually-hidden" id="color-orange" type="checkbox" name="orange" value="">
+              <label class="order__label" for="color-orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="order__section">
+          <legend class="order__title">Фио</legend>
+          <ul class="order__list fullname">
+            <li class="fullname__item">
+              <label class="fullname__label" for="firstname">Имя:</label>
+              <input class="fullname__input visually-hidden" id="firstname" type="text" name="firstname" value="">
+            </li>
+            <li class="fullname__item">
+              <label class="fullname__label" for="surname">Фамилия:</label>
+              <input class="fullname__input visually-hidden" id="surname" type="text" name="surname" value="">
+            </li>
+            <li class="fullname__item">
+              <label class="fullname__label" for="patronymic">Отчество:</label>
+              <input class="fullname__input visually-hidden" id="patronymic" type="text" name="patronymic" value="">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="order__section">
+          <legend class="order__title">Тел</legend>
+          <input class="order__input order__input--phone" type="tel" name="tel" value="">
+        </fieldset>
+
+        <fieldset class="order__section">
+          <legend class="order__title">e-mail</legend>
+          <input class="order__input order__input--email" type="email" name="email" value="">
+        </fieldset>
+
+        <fieldset class="order__section">
+          <legend class="order__title">Доп</legend>
+          <textarea class="order__comment" type="textarea" name="comment" value="" cols="50" rows="20">Опишите все ваши пожелания к заказу</textarea>
+          <small class="order__note">
+            <sup>*</sup>Поля обязательны для заполнения
+          </small>
+        </fieldset>
+
+        <button class="order__submit button" type="submit">Отправить заказ</button>
+      </form>
+
     </main>
 
     <footer class="footer">
