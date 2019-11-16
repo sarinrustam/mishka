@@ -1,0 +1,16 @@
+.fullname__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: $black-three;
+}
+
+.fullname__input::placeholder {
+  font-family: $font;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+  color: $greyish-brown-30;
+}

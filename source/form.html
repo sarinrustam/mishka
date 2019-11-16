@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, minimal-ui" />
     <title>Mishka: вязание на заказ</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page">
     <header class="header">
-      <a class="header__link">
+      <a class="header__link" href="index.html">
         <img class="header__image" src="./img/header-logo.svg" width="86" height="35" alt="Магазин ручной работы «Мишка» ">
       </a>
       <nav class="navigation">
@@ -33,14 +35,16 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title">Вязание на заказ</h1>
-      <p class="main__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      <section class="intro">
+        <h1 class="intro__title">Вязание на заказ</h1>
+      </section>
 
       <form class="order" action="https://echo.htmlacademy.ru" method="POST">
-
+        <p class="order__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="order__section">
           <legend class="order__title">Тип</legend>
-          <ul class="order__list">
+          <ul class="order__list list">
             <li class="order__item">
               <input class="order__input visually-hidder" id="for-interior" type="radio" name="interior" value="" checked>
               <label class="order__label" for="for-interior">Аксессуар для интерьера</label>
@@ -54,7 +58,7 @@
 
         <fieldset class="order__section">
           <legend class="order__title">Цвет</legend>
-          <ul class="order__list">
+          <ul class="order__list list">
             <li class="order__item">
               <input class="order__input visually-hidden" id="color-white" type="checkbox" name="white" value="" checked>
               <label class="order__label" for="color-white">Белый</label>
@@ -84,35 +88,35 @@
 
         <fieldset class="order__section">
           <legend class="order__title">Фио</legend>
-          <ul class="order__list fullname">
+          <ul class="order__list fullname list">
             <li class="fullname__item">
               <label class="fullname__label" for="firstname">Имя:</label>
-              <input class="fullname__input visually-hidden" id="firstname" type="text" name="firstname" value="">
+              <input class="fullname__input visually-hidden" id="firstname" type="text" name="firstname" value="" placeholder="Введите ваше имя*">
             </li>
             <li class="fullname__item">
               <label class="fullname__label" for="surname">Фамилия:</label>
-              <input class="fullname__input visually-hidden" id="surname" type="text" name="surname" value="">
+              <input class="fullname__input visually-hidden" id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию*">
             </li>
             <li class="fullname__item">
               <label class="fullname__label" for="patronymic">Отчество:</label>
-              <input class="fullname__input visually-hidden" id="patronymic" type="text" name="patronymic" value="">
+              <input class="fullname__input visually-hidden" id="patronymic" type="text" name="patronymic" value="" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="order__section">
           <legend class="order__title">Тел</legend>
-          <input class="order__input order__input--phone" type="tel" name="tel" value="">
+          <input class="order__input order__input--phone" type="tel" name="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </fieldset>
 
         <fieldset class="order__section">
           <legend class="order__title">e-mail</legend>
-          <input class="order__input order__input--email" type="email" name="email" value="">
+          <input class="order__input order__input--email" type="email" name="email" value="" placeholder="Ваш Email*">
         </fieldset>
 
         <fieldset class="order__section">
           <legend class="order__title">Доп</legend>
-          <textarea class="order__comment" type="textarea" name="comment" value="" cols="50" rows="20">Опишите все ваши пожелания к заказу</textarea>
+          <textarea class="order__comment" type="textarea" name="comment" value="" cols="32" rows="12" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <small class="order__note">
             <sup>*</sup>Поля обязательны для заполнения
           </small>
@@ -124,7 +128,7 @@
     </main>
 
     <footer class="footer">
-      <ul class="footer__item social">
+      <ul class="footer__item social list">
         <li class="social__item">
           <a class="social__link social__link--instagram">Инстаграм</a>
         </li>

@@ -1,0 +1,47 @@
+.hot-offer {
+  background-color: rgba(238, 153, 227, 0.323);
+  outline: 1px solid rgb(238, 153, 227);
+}
+
+.hot-offer__wrapper {
+  padding: 32px 30px 36px;
+}
+
+.hot-offer__subtitle {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $seafoam-blue;
+  text-align: left;
+}
+
+.hot-offer__desc {
+  margin: 0;
+  text-align: left;
+}
+
+.hot-offer__table-field {
+  line-height: 20px;
+  text-align: left;
+}
+
+.hot-offer__table-value {
+  line-height: 20px;
+  text-align: left;
+}
+
+.hot-offer__price {
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hot-offer__button {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: $greyish-brown;
+}

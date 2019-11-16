@@ -1,0 +1,41 @@
+.reviews {
+  background-color: rgba(192, 114, 138, 0.323);
+  outline: 1px solid rgb(14, 119, 49);
+}
+
+.reviews__wrapper {
+  padding: 0 30px 45px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  line-height: 30px;
+  text-align: left;
+}
+
+.reviews__author {
+  font-style: normal;
+  font-size: 17px;
+  text-align: left;
+  font-weight: bold;
+  color: $black-three;
+}
+
+.reviews__author-link {
+  font-size: 17px;
+  line-height: 30px;
+  text-align: left;
+  color: $greyish-brown;
+}
+
+.reviews__send {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: $greyish-brown;
+}
