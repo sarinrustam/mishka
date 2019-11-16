@@ -20,7 +20,7 @@
 }
 
 .order__input::placeholder {
-  font-family: "Open Sans";
+  font-family: $font;
   font-size: 17px;
   line-height: 18px;
   font-weight: normal;
@@ -29,7 +29,7 @@
 }
 
 .order__comment::placeholder {
-  font-family: "Open Sans";
+  font-family: $font;
   font-size: 17px;
   line-height: 18px;
   font-weight: normal;
