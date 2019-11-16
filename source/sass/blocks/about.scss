@@ -1,0 +1,30 @@
+.about {
+  background-color: rgba(91, 74, 190, 0.323);
+  outline: 1px solid rgb(97, 121, 151);
+}
+.about__wrapper {
+  padding: 44px 30px 40px;
+}
+.about__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: left;
+  color: $black-three;
+}
+.about__email-link {
+  color: $greyish-brown;
+}
+.about__text {
+  margin: 0;
+  text-align: left;
+  line-height: 30px;
+}
+.about__send-link {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $greyish-brown;
+  text-align: center;
+}

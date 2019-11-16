@@ -1,0 +1,19 @@
+.menu__item {
+  padding: 30px 90px 30px 30px;
+
+  &--left {
+    background-color: $seafoam-blue;
+  }
+
+  &--right {
+    background-color: $greeny-blue;
+  }
+
+}
+
+.menu__link {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+  color: $white;
+}

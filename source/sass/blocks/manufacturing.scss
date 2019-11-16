@@ -1,0 +1,21 @@
+.manufacturing {
+  background-color: rgba(228, 224, 20, 0.658);
+  outline: 1px solid rgba(191, 243, 2, 0.623);
+}
+.manufacturing__title {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  color: $black-three;
+}
+.manufacturing__text {
+  font-size: 13px;
+  text-align: left;
+}
+.manufacturing__link {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: $greyish-brown;
+}

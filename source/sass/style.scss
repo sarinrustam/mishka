@@ -1,0 +1,30 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+@import 'font-face';
+@import 'text';
+
+
+@import './blocks/list';
+@import './blocks/title';
+@import './blocks/page';
+
+// index.html
+@import './blocks/header';
+@import './blocks/site-list';
+@import './blocks/footer';
+@import './blocks/copyright';
+@import './blocks/main';
+@import './blocks/intro';
+
+
+@import './blocks/menu';
+@import './blocks/hot-offer';
+@import './blocks/info';
+@import './blocks/reviews';
+@import './blocks/about';
+
+// catalog.html
+@import './blocks/products';
+@import './blocks/product';
+@import './blocks/manufacturing';
+@import './blocks/order';
