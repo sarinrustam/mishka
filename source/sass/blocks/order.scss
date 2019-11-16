@@ -2,3 +2,50 @@
   background-color: rgba(17, 38, 230, 0.63);
   outline: 1px solid rgb(45, 9, 175);
 }
+
+.order__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: $seafoam-blue;
+}
+
+.order__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: $black-three;
+}
+
+.order__input::placeholder {
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+  color: $greyish-brown-30;
+}
+
+.order__comment::placeholder {
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+  color: $greyish-brown-30;
+}
+
+.order__note {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.order__submit {
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: bold;
+}
