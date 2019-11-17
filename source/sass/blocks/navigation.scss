@@ -1,0 +1,14 @@
+.navigation__toggle {
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+}

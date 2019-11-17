@@ -1,9 +1,13 @@
 .intro {
   // background-color: $white-two;
-  padding: 75px 37px 0;
+  padding: 75px 0 0;
   min-height: 177px;
   background-color: rgba(83, 179, 115, 0.323);
   outline: 1px solid rgb(148, 167, 154);
+
+  @media(min-width: $tablet-width) {
+    position: relative;
+  }
 
   &--main {
     background-color: $white-four;
@@ -22,4 +26,15 @@
   line-height: 30px;
   text-align: center;
   color: $very-dark-brown;
+}
+
+.intro__text {
+  display: none;
+
+  @media(min-width: $tablet-width) {
+    display: inline;
+    position: absolute;
+    right: 52px;
+    top: 0;
+  }
 }
