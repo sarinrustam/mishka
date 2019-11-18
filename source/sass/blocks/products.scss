@@ -2,6 +2,10 @@
   padding: 30px;
   background-color: rgba(26, 143, 211, 0.486);
   outline: 1px solid rgb(33, 56, 187);
+
+  @media(min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .products__item {
@@ -10,4 +14,18 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media(min-width: $desktop-width) {
+    display: block;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
 }
