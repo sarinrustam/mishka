@@ -1,5 +1,14 @@
+.menu {
+  margin-top: auto;
+  @media(min-width: $tablet-width) {
+    display: flex;
+
+  }
+}
 .menu__item {
+  box-sizing: border-box;
   padding: 30px 90px 31px 30px;
+  width: 100%;
 
   &--left {
     background-color: $seafoam-blue;
@@ -8,6 +17,7 @@
   &--right {
     background-color: $greeny-blue;
   }
+
 }
 
 .menu__link {
@@ -16,4 +26,9 @@
   text-align: left;
   color: $white;
   text-decoration: none;
+  width: 100%;
+
+  @media(min-width: $tablet-width) {
+
+  }
 }
