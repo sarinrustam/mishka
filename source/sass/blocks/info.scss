@@ -1,10 +1,15 @@
 .info {
   background-color: rgba(74, 61, 194, 0.323);
   outline: 1px solid rgb(87, 146, 106);
+  padding: 34px 30px 60px;
+
+  @media(min-width: $tablet-width) {
+    padding: 60px 52px 82px 52px;
+  }
 }
 
 .info__wrapper {
-  padding: 34px 30px 60px;
+
 }
 
 .info__item {
@@ -13,4 +18,34 @@
   font-weight: bold;
   text-align: left;
   color: $black-three;
+  margin-top: 82px;
+  width: 251px;
+
+  @media(min-width: $tablet-width) {
+    width: 295px;
+    margin-right: 99px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.info__title {
+  @media(min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.info__list {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

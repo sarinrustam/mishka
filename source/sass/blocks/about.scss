@@ -5,6 +5,10 @@
 
 .about__wrapper {
   padding: 44px 30px 40px;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .about__title {
@@ -14,6 +18,20 @@
   font-weight: bold;
   text-align: left;
   color: $black-three;
+  padding: 44px 30px 0;
+}
+
+.about__email {
+  margin: 0 32px 0 0;
+}
+
+.about__contact {
+  margin: 0;
+  margin-right: 32px;
+}
+
+.about__adress {
+  margin: 0;
 }
 
 .about__email-link {
@@ -21,7 +39,6 @@
 }
 
 .about__text {
-  margin: 0;
   text-align: left;
   line-height: 30px;
 }
@@ -32,4 +49,14 @@
   font-weight: bold;
   color: $greyish-brown;
   text-align: center;
+  width: 260px;
+}
+
+.about__row {
+  display: flex;
+  margin-bottom: 50px;
+
+  @media(min-width: $tablet-width) {
+    margin-right: 55px;
+  }
 }
