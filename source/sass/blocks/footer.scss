@@ -6,7 +6,7 @@
   flex-direction: column;
   padding: 0 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
@@ -18,7 +18,7 @@
 .footer__item {
   min-height: 79px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: auto;
   }
 }
@@ -26,7 +26,7 @@
 .footer__image {
   display: none;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

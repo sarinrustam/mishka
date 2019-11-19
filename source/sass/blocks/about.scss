@@ -3,23 +3,23 @@
   outline: 1px solid rgb(97, 121, 151);
   padding: 44px 30px 40px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
 
     padding: 72px 50px 57px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 152px 0 105px 175px;
     margin: 0 50px;
   }
 }
 
 .about__wrapper {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
     position: relative;
   }
@@ -32,7 +32,6 @@
   font-weight: bold;
   text-align: left;
   color: $black-three;
-
 }
 
 .about__email {
@@ -70,7 +69,7 @@
   display: flex;
   margin-bottom: 50px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 55px;
   }
 }

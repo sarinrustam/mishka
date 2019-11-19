@@ -3,18 +3,14 @@
   outline: 1px solid rgb(87, 146, 106);
   padding: 34px 30px 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 60px 50px 82px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 70px 0 89px 175px;
     margin: 0 50px;
   }
-}
-
-.info__wrapper {
-
 }
 
 .info__item {
@@ -26,7 +22,7 @@
   margin-top: 82px;
   width: 251px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 50%;
   }
 
@@ -36,19 +32,19 @@
 }
 
 .info__title {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
   }
 }
 
 .info__list {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }

@@ -3,26 +3,24 @@
   outline: 1px solid rgba(191, 243, 2, 0.623);
   padding: 0 30px 57px 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 3px 50px 63px 50px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 50px 105px 50px;
   }
-
 }
 
 .manufacturing__wrapper {
   display: flex;
   flex-direction: column;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
     position: relative;
     padding-left: 682px;
   }
-
 }
 
 .manufacturing__title {
@@ -46,11 +44,11 @@
 }
 
 .manufacturing__video {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     order: -1;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
     left: 0;

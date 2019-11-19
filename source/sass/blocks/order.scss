@@ -4,12 +4,8 @@
   padding: 30px 30px 55px 30px;
   box-sizing: border-box;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
-  }
-
-  @media(min-width: $desktop-width) {
-
   }
 }
 
@@ -19,7 +15,7 @@
   border: none;
   margin-bottom: 34px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0 0 50px 217px;
     position: relative;
   }
@@ -27,28 +23,27 @@
   &--no-title {
     padding-top: 0;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       padding: 0 0 50px 0;
     }
   }
 
   &:nth-child(odd) {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       background-color: $white-two;
     }
-
   }
 }
 
 .order__section-wrapper {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px 50px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 50px 225px 50px 225px;
   }
 }
@@ -58,7 +53,7 @@
   padding: 50px 0 0;
   margin-bottom: 39px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-left: 217px;
   }
@@ -80,21 +75,21 @@
   color: $seafoam-blue;
   width: 100%;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     left: 50px;
     width: auto;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     left: 114px;
   }
 }
 
 .order__title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 198px;
   height: 1px;
   background-color: $seafoam-blue;
@@ -102,7 +97,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -138,7 +133,7 @@
   line-height: 16px;
   text-align: left;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     order: 1;
   }
 }
@@ -156,11 +151,11 @@
   text-align: left;
   padding-bottom: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 68px 105px 60px 50px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 112px 225px 61px;
   }
 }
