@@ -13,6 +13,7 @@
     position: absolute;
     top: 22px;
     left: 51px;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {

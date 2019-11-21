@@ -7,8 +7,8 @@
 .navigation__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
   }
 }
