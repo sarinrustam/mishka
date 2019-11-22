@@ -9,15 +9,11 @@
 }
 
 .header__link {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 22px;
-    left: 51px;
-    z-index: 2;
-  }
+  transform: translateX(-50%);
+  margin-left: 50%;
 
-  @media (min-width: $desktop-width) {
-    left: 50%;
-    transform: translate(-50%, 0);
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+    margin-left: 0;
   }
 }

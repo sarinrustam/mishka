@@ -2,16 +2,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     order: 0;
-    width: 100%;
+    width: 50%;
     justify-content: flex-end;
     background: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    order: 1;
-    width: 50%;
+    order: 2;
     background: #ffffff;
+    width: 40%;
   }
 }
 

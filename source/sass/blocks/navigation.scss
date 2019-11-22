@@ -1,10 +1,5 @@
-.navigation__toggle {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
 
-.navigation__wrapper {
+.navigation {
   @media (min-width: $tablet-width) {
     display: flex;
     position: relative;
@@ -12,3 +7,29 @@
     flex-wrap: wrap;
   }
 }
+
+.navigation__row {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 20%;
+    justify-content: center;
+  }
+}
+
+.navigation__toggle {
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
