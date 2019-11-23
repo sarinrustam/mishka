@@ -10,14 +10,14 @@
 }
 
 .order__section {
-  padding: 50px 0 0;
+  padding: 27px 0 0;
   position: relative;
   border: none;
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 50px 217px;
-    position: relative;
+    padding: 0 0 50px 50px;
+    display: flex;
   }
 
   &--no-title {
@@ -50,12 +50,12 @@
 
 .order__row {
   position: relative;
-  padding: 50px 0 0;
+  padding: 0;
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 217px;
+    display: flex;
   }
 
   &:last-child {
@@ -65,9 +65,7 @@
 
 
 .order__title {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -76,14 +74,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    left: 50px;
-    width: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 114px;
+    width: 166px;
   }
 }
 
@@ -94,7 +85,7 @@
   height: 1px;
   background-color: $seafoam-blue;
   right: 0;
-  top: 50%;
+  top: 10px;
   transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
@@ -157,5 +148,11 @@
 
   @media (min-width: $desktop-width) {
     padding: 112px 225px 61px;
+  }
+}
+
+.order__list {
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 166px);
   }
 }

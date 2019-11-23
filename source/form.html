@@ -54,8 +54,8 @@
       <form class="order" action="https://echo.htmlacademy.ru" method="POST">
 
         <p class="order__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="order__section">
-          <legend class="order__title">Тип</legend>
+        <section class="order__section">
+          <h3 class="order__title">Тип</h3>
           <ul class="order__list list">
             <li class="order__item">
               <input class="order__input visually-hidder" id="for-interior" type="radio" name="interior" value="" checked>
@@ -66,10 +66,10 @@
               <label class="order__label" for="kids-toy">Детская игрушка</label>
             </li>
           </ul>
-        </fieldset>
+        </section>
 
-        <fieldset class="order__section order__section--color">
-          <legend class="order__title">Цвет</legend>
+        <section class="order__section order__section--color">
+          <h3 class="order__title">Цвет</h3>
           <ul class="order__list list">
             <li class="order__item">
               <input class="order__input visually-hidden" id="color-white" type="checkbox" name="white" value="" checked>
@@ -96,10 +96,10 @@
               <label class="order__label" for="color-orange">Оранжевый</label>
             </li>
           </ul>
-        </fieldset>
+        </section>
 
-        <fieldset class="order__section">
-          <legend class="order__title">Фио</legend>
+        <section class="order__section">
+          <h3 class="order__title">Фио</h3>
           <ul class="order__list fullname list">
             <li class="fullname__item">
               <label class="fullname__label" for="firstname">Имя:</label>
@@ -114,24 +114,25 @@
               <input class="fullname__input visually-hidden" id="patronymic" type="text" name="patronymic" value="" placeholder="Отчество, если желаете">
             </li>
           </ul>
-        </fieldset>
+        </section>
 
-        <fieldset class="order__section order__section--no-title">
-          <div class="order__row">
-            <label class="order__title">Тел</label>
-            <input class="order__input order__input--phone" type="tel" name="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <section class="order__section">
+          <div class="order__wrap">
+              <div class="order__row">
+                  <h3 class="order__title">Тел</h3>
+                  <input class="order__input order__input--phone" type="tel" name="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                </div>
+                <div class="order__row">
+                  <h3 class="order__title">e-mail</h3>
+                  <input class="order__input order__input--email" type="email" name="email" value="" placeholder="Ваш Email*">
+                </div>
           </div>
-          <div class="order__row">
-            <label class="order__title">e-mail</label>
-            <input class="order__input order__input--email" type="email" name="email" value="" placeholder="Ваш Email*">
-          </div>
+        </section>
 
-        </fieldset>
-
-        <fieldset class="order__section">
-          <legend class="order__title">Доп</legend>
+        <section class="order__section">
+          <h3 class="order__title">Доп</h3>
           <textarea class="order__comment" type="textarea" name="comment" value="" cols="32" rows="12" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </fieldset>
+        </section>
         <div class="order__section-wrapper">
           <small class="order__note">
             <sup>*</sup>Поля обязательны для заполнения
