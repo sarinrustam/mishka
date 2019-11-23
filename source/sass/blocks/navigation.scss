@@ -31,3 +31,14 @@
     display: none;
   }
 }
+
+.navigation__text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 2;
+    margin: 0 0 0 auto;
+    padding: 30px 51px;
+  }
+}

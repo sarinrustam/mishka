@@ -16,8 +16,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 50px 0;
-    margin-top: -23px;
+    padding: 75px 50px 0;
+    margin-top: -75px;
   }
 
   &--main {
@@ -37,15 +37,4 @@
   line-height: 30px;
   text-align: center;
   color: $very-dark-brown;
-}
-
-.intro__text {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-    position: absolute;
-    right: 52px;
-    top: 0;
-  }
 }
