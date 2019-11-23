@@ -1,5 +1,13 @@
 .header {
   // background-color: $white-four;
-  background-color: rgba(10, 241, 87, 0.323);
-  outline: 1px solid rgb(29, 121, 59);
+}
+
+.header__link {
+  transform: translateX(-50%);
+  margin-left: 50%;
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+    margin-left: 0;
+  }
 }

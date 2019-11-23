@@ -1,10 +1,28 @@
 .about {
   background-color: rgba(91, 74, 190, 0.323);
   outline: 1px solid rgb(97, 121, 151);
+  padding: 44px 30px 40px;
+
+  @media (min-width: $tablet-width) {
+
+    padding: 72px 50px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 152px 0 105px 175px;
+    margin: 0 50px;
+  }
 }
 
 .about__wrapper {
-  padding: 44px 30px 40px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    position: relative;
+  }
 }
 
 .about__title {
@@ -16,12 +34,24 @@
   color: $black-three;
 }
 
+.about__email {
+  margin: 0 32px 0 0;
+}
+
+.about__contact {
+  margin: 0;
+  margin-right: 32px;
+}
+
+.about__adress {
+  margin: 0;
+}
+
 .about__email-link {
   color: $greyish-brown;
 }
 
 .about__text {
-  margin: 0;
   text-align: left;
   line-height: 30px;
 }
@@ -32,4 +62,14 @@
   font-weight: bold;
   color: $greyish-brown;
   text-align: center;
+  width: 260px;
+}
+
+.about__row {
+  display: flex;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 55px;
+  }
 }

@@ -8,29 +8,40 @@
   </head>
   <body class="page">
     <header class="header">
-      <a class="header__link" href="index.html">
-        <img class="header__image" src="./img/header-logo.svg" width="86" height="35" alt="Магазин ручной работы «Мишка» ">
-      </a>
       <nav class="navigation">
-        <button class="navigation__toggle">
-          Открыть меню
-        </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--lens">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--bag">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+        <div class="navigation__row">
+            <a class="header__link">
+              <img class="header__image" src="./img/logo-mobile.svg" width="86" height="35" alt="Магазин ручной работы «Мишка» ">
+            </a>
+            <button class="navigation__toggle" type="button">
+                Открыть меню
+              </button>
         </div>
+        <ul class="navigation__list site-list list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="navigation__list user-list list">
+          <li class="user-list__item user-list__item--lens">
+            <a class="user-list__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__item--bag">
+            <a class="user-list__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="navigation__list addition-list list">
+          <li class="addition-list__item">
+            <a class="addition-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="addition-list__item">
+            <a class="addition-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="navigation__text">Бесплатная доставка по России</p>
       </nav>
     </header>
 
@@ -57,7 +68,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order__section">
+        <fieldset class="order__section order__section--color">
           <legend class="order__title">Цвет</legend>
           <ul class="order__list list">
             <li class="order__item">
@@ -105,30 +116,36 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order__section">
-          <legend class="order__title">Тел</legend>
-          <input class="order__input order__input--phone" type="tel" name="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-        </fieldset>
+        <fieldset class="order__section order__section--no-title">
+          <div class="order__row">
+            <label class="order__title">Тел</label>
+            <input class="order__input order__input--phone" type="tel" name="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          </div>
+          <div class="order__row">
+            <label class="order__title">e-mail</label>
+            <input class="order__input order__input--email" type="email" name="email" value="" placeholder="Ваш Email*">
+          </div>
 
-        <fieldset class="order__section">
-          <legend class="order__title">e-mail</legend>
-          <input class="order__input order__input--email" type="email" name="email" value="" placeholder="Ваш Email*">
         </fieldset>
 
         <fieldset class="order__section">
           <legend class="order__title">Доп</legend>
           <textarea class="order__comment" type="textarea" name="comment" value="" cols="32" rows="12" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <div class="order__section-wrapper">
           <small class="order__note">
             <sup>*</sup>Поля обязательны для заполнения
           </small>
-        </fieldset>
-
-        <button class="order__submit button" type="submit">Отправить заказ</button>
+          <button class="order__submit button" type="submit">Отправить заказ</button>
+        </div>
       </form>
 
     </main>
 
     <footer class="footer">
+      <a class="footer__logo" href="index.html">
+        <img class="footer__image" src="./img/logo-footer.svg" width="102" height="34" alt="Логотип Mishka">
+      </a>
       <ul class="footer__item social list">
         <li class="social__item">
           <a class="social__link social__link--instagram">Инстаграм</a>
@@ -143,7 +160,9 @@
 
       <div class="footer__item copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="./img/logo-htmlacademy.svg">
+        </a>
       </div>
     </footer>
   </body>

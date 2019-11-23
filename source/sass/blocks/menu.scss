@@ -1,5 +1,15 @@
+.menu {
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .menu__item {
-  padding: 30px 90px 30px 30px;
+  box-sizing: border-box;
+  padding: 30px 90px 31px 30px;
+  width: 100%;
 
   &--left {
     background-color: $seafoam-blue;
@@ -16,4 +26,5 @@
   text-align: left;
   color: $white;
   text-decoration: none;
+  width: 100%;
 }
