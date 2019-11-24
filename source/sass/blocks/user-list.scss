@@ -5,6 +5,10 @@
     width: 50%;
     justify-content: flex-end;
     background: #ffffff;
+    box-sizing: border-box;
+    padding-right: 52px;
+    box-shadow: 0px 1px 0 0 $white-four,
+    inset 0px 1px 0 0 $white-four;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,9 +19,28 @@
   }
 }
 
+.user-list__item {
+  box-shadow: 0px 1px 0 0 $white-four,
+  inset 0px 1px 0 0 $white-four;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $white-four;
+    box-shadow: none;
+  }
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 32px;
+  left: 41px;
+  transform: translateX(-50%);
+  opacity: 0.2;
+}
+
 .user-list__link {
   box-sizing: border-box;
-  padding: 30px 0 30px 76px;
+  padding: 0 30px 0 76px;
   display: inline-block;
   width: 100%;
   font-size: 17px;
@@ -25,4 +48,17 @@
   text-align: left;
   color: $black-three;
   text-decoration: none;
+  min-height: 79px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 83px;
+  }
+}
+
+.user-list__item--search a {
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+  }
 }
