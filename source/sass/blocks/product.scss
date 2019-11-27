@@ -1,18 +1,54 @@
 .product__link {
+  display: inline-block;
   font-size: 17px;
   font-weight: bold;
   text-align: left;
   color: $black-three;
+  text-decoration: none;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .product__desc {
+  margin: 0 0 27px 0;
   font-size: 13px;
   line-height: 30px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 182px;
+  }
 }
 
 .product__price {
+  margin: 0;
   font-weight: bold;
   text-align: left;
   color: $black-three;
+}
+
+.product__wrapper {
+  padding: 30px 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    border: 1px solid $white-four;
+  }
+}
+
+.product__row {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $white-four;
+    padding: 28px 0;
+  }
+}
+
+.product__button {
+  padding: 0;
 }
