@@ -14,8 +14,7 @@
 }
 
 .site-list__item {
-  box-shadow: 0px 1px 0 0 $white-four,
-      inset 0px 1px 0 0 $white-four;
+  box-shadow: 0 1px 0 0 $white-four, inset 0 1px 0 0 $white-four;
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
