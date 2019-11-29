@@ -14,7 +14,8 @@
 }
 
 .products__item {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  width: 260px;
 
   &:last-child {
     margin-bottom: 0;
@@ -22,12 +23,16 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 100%;
+    min-height: 334px;
     margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     margin-right: 50px;
+    min-height: auto;
+    width: 316px;
 
     &:last-child {
       margin-right: 0;

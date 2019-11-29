@@ -1,9 +1,25 @@
+.fullname__item {
+  margin: 24px 0 -1px 0;
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .fullname__label {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   text-align: left;
   color: $black-three;
+}
+
+.fullname__input {
+  border: none;
+  padding: 17px 0;
+  box-shadow: inset 0px -2px 0 0 $black-two;
 }
 
 .fullname__input::placeholder {

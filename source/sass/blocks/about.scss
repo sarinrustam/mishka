@@ -1,7 +1,5 @@
 .about {
-  background-color: rgba(91, 74, 190, 0.323);
-  outline: 1px solid rgb(97, 121, 151);
-  padding: 44px 30px 40px;
+  padding: 41px 30px 40px;
 
   @media (min-width: $tablet-width) {
 
@@ -26,7 +24,7 @@
 }
 
 .about__title {
-  margin: 0;
+  margin: 0 0 26px 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -49,6 +47,7 @@
 
 .about__email-link {
   color: $greyish-brown;
+  text-decoration: none;
 }
 
 .about__text {
@@ -62,12 +61,17 @@
   font-weight: bold;
   color: $greyish-brown;
   text-align: center;
-  width: 260px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about__row {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  &:last-of-type {
+    margin-bottom: 37px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 55px;

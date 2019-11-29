@@ -1,5 +1,5 @@
 .info {
-  padding: 34px 30px 30px;
+  padding: 33px 28px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 50px 82px;
@@ -12,15 +12,17 @@
 }
 
 .info__item {
+  position: relative;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   text-align: left;
   color: $black-three;
-  margin: 0 0 30px;
-  padding: 58px 30px 0 0;
-  max-width: 251px;
+  margin: 0 0 -3px;
+  padding: 86px 15px 0 0;
+  // max-width: 251px;
   box-sizing: border-box;
+
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -32,6 +34,13 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.info__icon {
+  position: absolute;
+  top: 32px;
+  left: 5px;
+  fill: $seafoam-blue;
 }
 
 .info__title {
