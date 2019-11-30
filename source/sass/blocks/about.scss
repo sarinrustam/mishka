@@ -2,8 +2,8 @@
   padding: 41px 30px 40px;
 
   @media (min-width: $tablet-width) {
-
-    padding: 72px 50px 57px;
+    padding: 41px 46px 57px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +15,7 @@
 .about__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,15 +31,28 @@
   font-weight: bold;
   text-align: left;
   color: $black-three;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 49px 0;
+  }
 }
 
 .about__email {
   margin: 0 32px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 23px 0 4px;
+  }
 }
 
 .about__contact {
-  margin: 0;
-  margin-right: 32px;
+  margin: 0 32px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 25px 0 0;
+  }
 }
 
 .about__adress {
@@ -53,6 +67,10 @@
 .about__text {
   text-align: left;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .about__send-link {
@@ -63,6 +81,13 @@
   text-align: center;
   width: 100%;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    width: auto;
+    margin: 0 auto;
+    padding: 14px 39px 14px 38px;
+  }
 }
 
 .about__row {
@@ -71,9 +96,20 @@
 
   &:last-of-type {
     margin-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+      margin-right: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 55px;
+    margin-right: 52px;
+  }
+}
+
+.about__br {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

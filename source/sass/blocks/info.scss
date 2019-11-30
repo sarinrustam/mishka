@@ -2,7 +2,7 @@
   padding: 33px 28px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 50px 82px;
+    padding: 65px 46px 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,20 +26,52 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding: 52px 0 0 0;
-    margin: 0 0 50px;
-    max-width: 300px;
+    padding: 103px 0 0 0;
+    margin: 0 43px 8px 0;
+    max-width: 295px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--handmade {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--heart {
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
+  }
+
+  &--rocket {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
+  }
+
+  &--money {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
 }
 
 .info__icon {
   position: absolute;
-  top: 32px;
-  left: 5px;
+  top: 50px;
+  left: 7px;
   fill: $seafoam-blue;
 }
 

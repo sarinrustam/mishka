@@ -23,11 +23,21 @@
     background-position: -128px -18px;
     background-repeat: no-repeat;
     min-height: 283px;
+
+    @media (min-width: $tablet-width) {
+      padding: 177px 0 0 0;
+    }
   }
 }
 
 .intro--main .intro__title {
   margin: 0 0 122px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 373px;
+  }
 }
 
 .intro__title {

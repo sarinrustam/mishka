@@ -175,15 +175,15 @@
   box-sizing: border-box;
 }
 
-.order__checkbox-input:checked+.order__checkbox-label::after {
+.order__checkbox-input:checked + .order__checkbox-label::after {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.order__checkbox-input:disabled+.order__checkbox-label::after {
+.order__checkbox-input:disabled + .order__checkbox-label::after {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-.order__checkbox-input:checked:disabled+.order__checkbox-label::after {
+.order__checkbox-input:checked:disabled + .order__checkbox-label::after {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
@@ -224,15 +224,15 @@
   box-sizing: border-box;
 }
 
-.order__radio-input:checked+.order__radio-label::after {
+.order__radio-input:checked + .order__radio-label::after {
   display: block;
 }
 
-.order__radio-input:disabled+.order__radio-label::before {
+.order__radio-input:disabled + .order__radio-label::before {
   opacity: 0.3;
 }
 
-.order__radio-input:checked:disabled+.order__radio-label::after {
+.order__radio-input:checked:disabled + .order__radio-label::after {
   opacity: 0.3;
   display: block;
 }
@@ -240,7 +240,7 @@
 .order__input {
   border: none;
   padding: 17px 0;
-  box-shadow: inset 0px -2px 0 0 $black-two;
+  box-shadow: inset 0 -2px 0 0 $black-two;
   width: 260px;
 
   &::placeholder {
@@ -342,7 +342,7 @@
 
 .order__comment {
   height: 142px;
-  box-shadow: inset 0px -2px 0 0 &black-two;
+  box-shadow: inset 0 -2px 0 0 &black-two;
   border: solid 2px $greyish-brown;
   background-color: $white;
   padding: 14px 15px;

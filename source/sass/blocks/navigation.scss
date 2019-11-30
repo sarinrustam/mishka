@@ -15,10 +15,10 @@
   box-shadow: 0 1px 0 0 $white-four, inset 0 1px 0 0 $white-four;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
     justify-content: flex-start;
     padding-left: 51px;
     box-sizing: border-box;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +52,6 @@
     display: block;
     order: 2;
     margin: 0 0 0 auto;
-    padding: 25px 51px;
+    padding: 18px 51px;
   }
 }
