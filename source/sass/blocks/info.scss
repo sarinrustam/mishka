@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 0 89px 175px;
+    padding: 81px 0 81px 175px;
     margin: 0 50px;
   }
 }
@@ -31,6 +31,10 @@
     max-width: 295px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 55px 8px 0;
   }
 
   &:last-child {

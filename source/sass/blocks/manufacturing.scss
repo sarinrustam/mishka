@@ -1,10 +1,9 @@
 .manufacturing {
-  background-color: rgba(228, 224, 20, 0.658);
-  outline: 1px solid rgba(191, 243, 2, 0.623);
   padding: 0 30px 57px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 3px 50px 63px 50px;
+    min-height: 738px;
   }
 
   @media (min-width: $desktop-width) {

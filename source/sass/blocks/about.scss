@@ -7,8 +7,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 152px 0 105px 175px;
+    padding: 198px 0 105px 169px;
     margin: 0 50px;
+    text-align: left;
   }
 }
 
@@ -36,6 +37,11 @@
     font-size: 43px;
     line-height: 50px;
     margin: 0 0 49px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -100,6 +106,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 56px;
       margin-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 78px;
     }
   }
 
