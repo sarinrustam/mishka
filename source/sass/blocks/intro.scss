@@ -14,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -75px;
+    padding: 95px 52px 0;
   }
 
   &--main {
@@ -68,6 +69,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 82px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

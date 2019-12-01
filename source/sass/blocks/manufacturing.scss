@@ -7,7 +7,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 50px 105px 50px;
+    padding: 0 50px 106px 50px;
+    min-height: 455px;
   }
 }
 
@@ -18,7 +19,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
-    padding-left: 682px;
+    padding: 99px 57px 0 762px;
   }
 }
 
@@ -27,11 +28,22 @@
   font-weight: bold;
   text-align: left;
   color: $black-three;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 33px 0;
+    font-size: 20px;
+  }
 }
 
 .manufacturing__text {
   font-size: 13px;
   text-align: left;
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 0 46px 0;
+  }
 }
 
 .manufacturing__link {
@@ -40,6 +52,12 @@
   font-weight: bold;
   text-align: center;
   color: $greyish-brown;
+  display: inline-block;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 43px 16px 43px;
+  }
 }
 
 .manufacturing__video {
@@ -51,5 +69,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 682px;
+    height: 455px;
   }
 }
