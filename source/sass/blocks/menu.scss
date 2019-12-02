@@ -5,6 +5,11 @@
     display: flex;
     margin: 0 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .menu__item {
@@ -30,7 +35,7 @@
   color: $white;
   text-decoration: none;
   width: 100%;
-  padding: 26px 90px 29px 30px;
+  padding: 25px 90px 30px 29px;
 
   @media (min-width: $tablet-width) {
     padding: 28px 0 34px 36px;
@@ -46,4 +51,12 @@
   right: 57px;
   top: 50%;
   transform: translate(50%, -50%);
+
+  &--right {
+
+    @media (min-width: $tablet-width) {
+      top: 61px;
+      right: 64px;
+    }
+  }
 }

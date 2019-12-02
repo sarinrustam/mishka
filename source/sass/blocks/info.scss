@@ -1,12 +1,12 @@
 .info {
-  padding: 33px 28px 30px;
+  padding: 33px 26px 30px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 65px 46px 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 81px 0 81px 175px;
+    padding: 82px 0 81px 175px;
     margin: 0 50px;
   }
 }
@@ -26,56 +26,105 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding: 103px 0 0 0;
-    margin: 0 43px 8px 0;
-    max-width: 295px;
+    padding: 103px 0 0 4px;
+    margin: 0 37px 8px 0;
+    max-width: 297px;
     font-size: 20px;
     line-height: 22px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 55px 8px 0;
+    padding: 103px 0 0 0;
+    max-width: 295px;
   }
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  &--flower {
+    background: url("../../img/icon-feature-flower.svg") 8px 32px no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-position: 13px 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 9px 48px;
+    }
+  }
+
   &--handmade {
+    background: url("../../img/icon-feature-ball.svg") 3px 35px no-repeat;
+
     @media (min-width: $tablet-width) {
       order: 2;
+      background-position: 7px 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 3px 52px;
     }
   }
 
   &--heart {
+    background: url("../../img/icon-feature-heart.svg") 8px 38px no-repeat;
+
     @media (min-width: $tablet-width) {
       order: 5;
+      background-position: 13px 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 8px 55px;
     }
   }
 
   &--rocket {
+    background: url("../../img/icon-feature-rocket.svg") -3px 36px no-repeat;
+
     @media (min-width: $tablet-width) {
       order: 4;
+      background-position: -2px 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: -5px 53px;
     }
   }
 
   &--gift {
+    background: url("../../img/icon-feature-gift.svg") 3px 33px no-repeat;
+
     @media (min-width: $tablet-width) {
       order: 5;
+      background-position: 7px 51px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 3px 51px;
     }
   }
 
   &--money {
+    background: url("../../img/icon-feature-money.svg") 0 32px no-repeat;
+
     @media (min-width: $tablet-width) {
       order: 3;
+      background-position: 5px 49px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 1px 49px;
     }
   }
 }
 
 .info__icon {
   position: absolute;
-  top: 50px;
-  left: 7px;
+  top: 33px;
+  left: 8px;
   fill: $seafoam-blue;
 }
 
@@ -90,6 +139,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-left: -4px;
   }
 }
 

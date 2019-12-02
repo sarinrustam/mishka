@@ -19,6 +19,24 @@
   @media (min-width: $tablet-width) {
     min-height: auto;
   }
+
+  &--copyright {
+    @media (min-width: $tablet-width) {
+      margin-top: 7px;
+    }
+  }
+
+  &--social {
+    @media (min-width: $tablet-width) {
+      margin: 9px 0 0 117px;
+    }
+  }
+}
+
+.footer__logo {
+  @media (min-width: $tablet-width) {
+    margin-top: -8px;
+  }
 }
 
 .footer__image {
