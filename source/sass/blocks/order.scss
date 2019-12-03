@@ -225,9 +225,9 @@
   display: block;
 }
 
-.order__checkbox-input:disabled + .order__checkbox-label::after {
+// .order__checkbox-input:disabled + .order__checkbox-label::after {
 
-}
+// }
 
 .order__checkbox-input:checked:disabled + .order__checkbox-label::after {
   display: block;
@@ -453,6 +453,7 @@
 
 .order__wrap {
   padding-top: 22px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     padding-top: 0;
