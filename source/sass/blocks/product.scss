@@ -29,11 +29,12 @@
   line-height: 30px;
   text-align: left;
   border-bottom: 1px solid $white-four;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
     border-bottom: none;
+    padding-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +55,7 @@
 }
 
 .product__wrapper {
-  padding: 25px 28px 25px 27px;
+  padding: 27px 28px 27px 27px;
   box-sizing: border-box;
   border: 1px solid $white-four;
 
