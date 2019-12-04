@@ -44,7 +44,7 @@
   }
 
   &--flower {
-    background: url("../../img/icon-feature-flower.svg") 8px 32px no-repeat;
+    background: url("../img/icon-feature-flower.svg") 8px 32px no-repeat;
 
     @media (min-width: $tablet-width) {
       background-position: 13px 48px;
@@ -56,7 +56,7 @@
   }
 
   &--handmade {
-    background: url("../../img/icon-feature-ball.svg") 3px 35px no-repeat;
+    background: url("../img/icon-feature-ball.svg") 3px 35px no-repeat;
 
     @media (min-width: $tablet-width) {
       order: 2;
@@ -69,7 +69,7 @@
   }
 
   &--heart {
-    background: url("../../img/icon-feature-heart.svg") 8px 38px no-repeat;
+    background: url("../img/icon-feature-heart.svg") 8px 38px no-repeat;
 
     @media (min-width: $tablet-width) {
       order: 5;
@@ -82,7 +82,7 @@
   }
 
   &--rocket {
-    background: url("../../img/icon-feature-rocket.svg") -3px 36px no-repeat;
+    background: url("../img/icon-feature-rocket.svg") -3px 36px no-repeat;
 
     @media (min-width: $tablet-width) {
       order: 4;
@@ -95,7 +95,7 @@
   }
 
   &--gift {
-    background: url("../../img/icon-feature-gift.svg") 3px 33px no-repeat;
+    background: url("../img/icon-feature-gift.svg") 3px 33px no-repeat;
 
     @media (min-width: $tablet-width) {
       order: 5;
@@ -108,7 +108,7 @@
   }
 
   &--money {
-    background: url("../../img/icon-feature-money.svg") 0 32px no-repeat;
+    background: url("../img/icon-feature-money.svg") 0 32px no-repeat;
 
     @media (min-width: $tablet-width) {
       order: 3;
