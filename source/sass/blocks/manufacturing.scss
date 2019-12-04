@@ -15,7 +15,7 @@
 .manufacturing__wrapper {
   display: flex;
   flex-direction: column;
-  background: url("../../img/icon-video.svg") 34px 29px no-repeat;
+  background: url("../img/icon-video.svg") 34px 29px no-repeat;
   border: solid 1px $white-four;
 
   @media (min-width: $tablet-width) {
@@ -26,7 +26,7 @@
     display: block;
     position: relative;
     padding: 95px 57px 0 759px;
-    background: url("../../img/icon-video.svg") 761px 41px no-repeat;
+    background: url("../img/icon-video.svg") 761px 41px no-repeat;
   }
 }
 
@@ -42,7 +42,7 @@
     font-size: 20px;
     margin: 0 -1px 33px;
     padding: 37px 0 0 106px;
-    background: url("../../img/icon-video.svg") 42px 32px no-repeat;
+    background: url("../img/icon-video.svg") 42px 32px no-repeat;
   }
 
   @media (min-width: $desktop-width) {
