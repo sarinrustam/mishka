@@ -7,10 +7,8 @@
   }
 }
 
-.order__section {
-  padding: 0;
+.order__wrapper-center {
   position: relative;
-  border: none;
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
@@ -22,9 +20,29 @@
 
   @media (min-width: $desktop-width) {
     padding: 48px 225px 50px 114px;
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
-  &--no-title {
+  &--desc {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.order__section {
+  &--no-title .order__wrapper-center {
     padding-top: 0;
 
     @media (min-width: $tablet-width) {
@@ -38,11 +56,11 @@
     }
   }
 
-  &:last-of-type {
+  &:last-of-type .order__wrapper-center {
     margin-bottom: 0;
   }
 
-  &--color {
+  &--color .order__wrapper-center {
     margin-bottom: 43px;
 
     @media (min-width: $tablet-width) {
@@ -51,7 +69,7 @@
     }
   }
 
-  &--fullname {
+  &--fullname .order__wrapper-center {
     margin: 0;
 
     @media (min-width: $tablet-width) {
@@ -60,6 +78,7 @@
 
     @media (min-width: $desktop-width) {
       padding: 20px 169px 51px 111px;
+      margin: 0 auto;
     }
   }
 }
@@ -73,8 +92,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: -4px 225px 50px 225px;
-    padding: 0;
+    padding: 0 225px 50px 225px;
+    max-width: 1150px;
+    margin: -4px auto 0;
+    box-sizing: border-box;
   }
 }
 
@@ -408,14 +429,14 @@
   margin: 0 0 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 105px 7px 50px;
+    padding: 60px 51px 9px 0px;
     font-size: 17px;
     line-height: 30px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 143px 253px 11px 225px;
+    padding: 143px 0 11px 111px;
   }
 }
 
@@ -479,9 +500,20 @@
 
 .order__wrap {
   padding-top: 19px;
+  position: relative;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    padding-top: 0;
+    padding: 50px;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 48px 225px 50px 114px;
   }
 }

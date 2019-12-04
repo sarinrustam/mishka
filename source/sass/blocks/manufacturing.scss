@@ -9,6 +9,9 @@
   @media (min-width: $desktop-width) {
     padding: 0 50px 106px 50px;
     min-height: 455px;
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
@@ -25,7 +28,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
-    padding: 95px 57px 0 759px;
+    padding: 95px 57px 59px 759px;
     background: url("../img/icon-video.svg") 761px 41px no-repeat;
   }
 }

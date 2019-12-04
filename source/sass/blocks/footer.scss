@@ -1,5 +1,8 @@
 .footer {
   background-color: $white-two;
+}
+
+.footer__wrapper {
   display: flex;
   flex-direction: column;
   padding: 0 30px;
@@ -10,6 +13,12 @@
     padding: 0 50px;
     min-height: 143px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 

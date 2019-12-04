@@ -9,9 +9,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 50px;
-    padding: 71px 0 100px 172px;
+    padding: 71px 50px 100px 222px;
     background-position: 0 0;
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 

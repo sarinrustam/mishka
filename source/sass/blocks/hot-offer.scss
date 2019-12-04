@@ -7,8 +7,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 50px;
-    padding: 121px 0 73px 47px;
+    padding: 121px 50px 73px 97px;
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
