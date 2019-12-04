@@ -6,6 +6,11 @@
     z-index: 1;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .navigation__row {
