@@ -6,15 +6,24 @@
     z-index: 1;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .navigation__row {
   display: flex;
   justify-content: center;
+  background-color: $white;
+  box-shadow: 0 1px 0 0 $white-four, inset 0 1px 0 0 $white-four;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
     justify-content: flex-start;
+    padding-left: 51px;
+    box-sizing: border-box;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,9 +34,18 @@
 }
 
 .navigation__toggle {
+  padding: 0;
+  box-sizing: border-box;
   margin-left: auto;
+  margin-right: 30px;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.navigation__toggle-icon {
+  &--open {
     display: none;
   }
 }
@@ -39,6 +57,6 @@
     display: block;
     order: 2;
     margin: 0 0 0 auto;
-    padding: 30px 51px;
+    padding: 18px 51px;
   }
 }

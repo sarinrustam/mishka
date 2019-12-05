@@ -1,22 +1,26 @@
 .products {
-  padding: 30px;
-  background-color: rgba(26, 143, 211, 0.486);
-  outline: 1px solid rgb(33, 56, 187);
+  padding: 30px 30px 31px 30px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 67px 50px 50px 50px;
+    padding: 67px 50px 53px 50px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
-    padding: 111px 50px 57px 50px;
+    justify-content: flex-start;
+    padding: 150px 0 0 0;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 }
 
 .products__item {
   margin-bottom: 30px;
+  width: 260px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
   &:last-child {
     margin-bottom: 0;
@@ -24,11 +28,18 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 334px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    flex-direction: column;
     margin-right: 50px;
+    min-height: auto;
+    width: 316px;
+    margin-bottom: 57px;
 
     &:last-child {
       margin-right: 0;

@@ -1,7 +1,8 @@
 .footer {
-  // background-color: $white-two;
-  background-color: rgba(185, 2, 78, 0.534);
-  outline: 1px solid rgb(184, 30, 38);
+  background-color: $white-two;
+}
+
+.footer__wrapper {
   display: flex;
   flex-direction: column;
   padding: 0 30px;
@@ -13,6 +14,12 @@
     min-height: 143px;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 }
 
 .footer__item {
@@ -20,6 +27,24 @@
 
   @media (min-width: $tablet-width) {
     min-height: auto;
+  }
+
+  &--copyright {
+    @media (min-width: $tablet-width) {
+      margin-top: 7px;
+    }
+  }
+
+  &--social {
+    @media (min-width: $tablet-width) {
+      margin: 9px 0 0 117px;
+    }
+  }
+}
+
+.footer__logo {
+  @media (min-width: $tablet-width) {
+    margin-top: -8px;
   }
 }
 

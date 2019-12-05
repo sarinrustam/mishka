@@ -1,8 +1,19 @@
 .social {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 2px 0 0 35px;
+
+  @media (min-width: $tablet-width) {
+    // padding: 5px 0 0 117px;
+    padding: 0;
+  }
 }
 
 .social__item {
   margin-right: 40px;
+}
+
+.social__link {
+  line-height: 0;
 }

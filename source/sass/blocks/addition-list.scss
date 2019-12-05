@@ -4,7 +4,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     order: 2;
-    padding: 25px 0 25px 76px;
+    padding: 0 0 0 51px;
   }
 }
 
@@ -17,4 +17,10 @@
   text-align: left;
   color: $black-three;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    min-height: 74px;
+    padding: 18px 60px 25px 0;
+    font-size: 15px;
+  }
 }

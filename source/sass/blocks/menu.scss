@@ -3,13 +3,19 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
 .menu__item {
   box-sizing: border-box;
-  padding: 30px 90px 31px 30px;
   width: 100%;
+  position: relative;
 
   &--left {
     background-color: $seafoam-blue;
@@ -21,10 +27,35 @@
 }
 
 .menu__link {
+  display: block;
+  box-sizing: border-box;
   font-size: 19px;
   font-weight: bold;
   text-align: left;
   color: $white;
   text-decoration: none;
   width: 100%;
+  padding: 25px 90px 30px 29px;
+
+  @media (min-width: $tablet-width) {
+    padding: 28px 0 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.menu__icon {
+  position: absolute;
+  opacity: 0.5;
+  fill: $blue-green;
+  right: 57px;
+  top: 50%;
+  transform: translate(50%, -50%);
+
+  &--right {
+    @media (min-width: $tablet-width) {
+      top: 61px;
+      right: 64px;
+    }
+  }
 }
