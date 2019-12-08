@@ -346,6 +346,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     padding: 18px 14px 17px 14px;
+    background-color: $white-two;
   }
 
   &::placeholder {
@@ -355,6 +356,7 @@
     font-weight: normal;
     text-align: left;
     color: $greyish-brown-30;
+    opacity: 0.3;
   }
 
   &--phone {
@@ -436,7 +438,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 143px 0 11px 111px;
+    padding: 109px 0 11px 111px;
   }
 }
 

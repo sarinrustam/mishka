@@ -9,7 +9,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-start;
-    padding: 150px 0 0 0;
+    padding: 116px 0 0 0;
     max-width: 1050px;
     margin: 0 auto;
   }
@@ -19,8 +19,6 @@
   margin-bottom: 30px;
   width: 260px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 
   &:last-child {
     margin-bottom: 0;

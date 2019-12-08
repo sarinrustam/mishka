@@ -1,9 +1,22 @@
 .hot-offer {
   padding: 27px 30px 36px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 42px 47px 53px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url("../img/bg-zigzag-line.svg") 18px -1px repeat-x;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background-size: 771px 16px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -11,6 +24,18 @@
     max-width: 1150px;
     margin: 0 auto;
     box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url("../img/bg-zigzag-line.svg") 18px -1px repeat-x;
+      bottom: -24px;
+      left: 56px;
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px 23px;
+    }
   }
 }
 
@@ -23,6 +48,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: -4px;
+    z-index: 1;
   }
 }
 
@@ -41,8 +67,17 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 160px;
+    top: 149px;
     right: 52px;
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 68px;
+    right: 50px;
+    width: 525px;
+    height: 636px;
   }
 }
 
