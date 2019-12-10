@@ -61,8 +61,14 @@
 
       @media (min-width: $desktop-width) {
         height: 34px;
-        background-size: 1250px 34px;
         bottom: -14px;
+        background: url("../img/bg-zigzag-fill@1x.png") center 0 no-repeat;
+        background-size: 1150px 34px;
+      }
+
+      @media (min-width: $desktop-width) and (min-resolution: $retina) {
+        background: url("../img/bg-zigzag-fill@2x.png") center 0 no-repeat;
+        background-size: 1150px 34px;
       }
     }
 
@@ -76,6 +82,7 @@
       padding: 155px 0 0 0;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position: center;
+      background-color: #f9f9f9;
     }
 
     @media (min-resolution: $retina) {
