@@ -7,11 +7,14 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page">
+    <div style="display: none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
     <header class="header">
       <nav class="navigation navigation--open">
         <div class="navigation__row">
-          
-            <a class="header__link">
+
+            <a class="header__link" href="index.html">
               <picture>
                 <source media="(min-width:1150px)" srcset="./img/logo-desktop.svg">
                 <source media="(min-width:768px)" srcset="./img/logo-tablet.svg">
@@ -19,10 +22,10 @@
               </picture>
             </a>
             <button class="navigation__toggle" type="button">
-              <svg class="navigation__toggle-icon navigation__toggle-icon--open" width="20" height="14">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="navigation__toggle-icon navigation__toggle-icon--open" width="20" height="14">
                 <use xlink:href="./img/sprite.svg#icon-menu-open"></use>
               </svg>
-              <svg class="navigation__toggle-icon navigation__toggle-icon--close" width="20.5" height="20.5">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="navigation__toggle-icon navigation__toggle-icon--close" width="20.5" height="20.5">
                 <use xlink:href="./img/sprite.svg#icon-menu-close"></use>
               </svg>
             </button>
@@ -39,7 +42,7 @@
           <li class="user-list__item user-list__item--search">
 
             <a class="user-list__link" href="#">
-              <svg class="user-list__icon" width="17.6" height="17.6">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="user-list__icon" width="17.6" height="17.6">
                 <use xlink:href="./img/sprite.svg#icon-search"></use>
               </svg>
               Поиск по сайту
@@ -47,7 +50,7 @@
           </li>
           <li class="user-list__item">
             <a class="user-list__link" href="#">
-              <svg class="user-list__icon" width="20.2" height="18.8">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="user-list__icon" width="20.2" height="18.8">
                 <use xlink:href="./img/sprite.svg#icon-bag"></use>
               </svg>
               Корзина: пока пуста
@@ -150,14 +153,14 @@
               <div class="order__row">
                   <h3 class="order__title order__title--phone">ТЕЛ</h3>
                   <input class="order__input order__input--phone" type="tel" name="tel" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                  <svg class="order__icon" width="24.829px" height="24.333px">
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="order__icon" width="24.829px" height="24.333px">
                     <use xlink:href="./img/sprite.svg#icon-phone"></use>
                   </svg>
                 </div>
                 <div class="order__row">
                   <h3 class="order__title order__title--email">E-mail</h3>
                   <input class="order__input order__input--email" type="email" name="email" value="" placeholder="Ваш Email*">
-                  <svg class="order__icon" width="32px" height="32px">
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="order__icon" width="32px" height="32px">
                     <use xlink:href="./img/sprite.svg#icon-email"></use>
                   </svg>
                 </div>
@@ -189,21 +192,21 @@
         <ul class="footer__item footer__item--social social list">
           <li class="social__item">
             <a class="social__link social__link--instagram">
-              <svg class="" width="21.769px" height="21.334px">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="" width="21.769px" height="21.334px">
                 <use xlink:href="./img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook">
-              <svg class="" width="14.962px" height="27.718px">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="" width="14.962px" height="27.718px">
                 <use xlink:href="./img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter">
-              <svg class="" width="23.494px" height="20.168px">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="" width="23.494px" height="20.168px">
                 <use xlink:href="./img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -213,7 +216,7 @@
         <div class="footer__item footer__item--copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__image" width="26.943px" height="34.09px">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="copyright__image" width="26.943px" height="34.09px">
               <use xlink:href="./img/sprite.svg#icon-footer-logo"></use>
             </svg>
           </a>
