@@ -11,7 +11,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <nav class="navigation navigation--open">
+      <nav class="navigation navigation--no-js">
         <div class="navigation__row">
             <a class="header__link" href="index.html">
               <picture>
@@ -180,11 +180,51 @@
       <section class="manufacturing">
         <div class="manufacturing__wrapper">
           <h2 class="manufacturing__title">Процесс производства</h2>
-          <video class="manufacturing__video" width="260" height="150" src="#">
-            Ваш браузер не поддерживает видео HTML5.
-          </video>
+          <a class="manufacturing__video" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                      srcset="./img/video-desktop@1x.webp 1x,
+                              ./img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="./img/video-tablet@1x.webp 1x,
+                              ./img/video-tablet@2x.webp 2x">
+              <source type="image/webp"
+                      srcset="./img/video-mobile@1x.webp 1x,
+                              ./img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)"
+                      srcset="./img/video-desktop@1x.jpg 1x,
+                              ./img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="./img/video-tablet@1x.jpg 1x,
+                              ./img/video-tablet@2x.jpg 2x">
+              <img class="manufacturing__image" src="./img/video-mobile@1x.jpg"
+                                                srcset="./img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео процесса производства">
+            </picture>
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="manufacturing__icon" width="100.678" height="76.891">
+              <use xlink:href="./img/sprite.svg#icon-play"></use>
+            </svg>
+          </a>
           <p class="manufacturing__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="manufacturing__link button" href="#">Сделать заказ</a>
+        </div>
+      </section>
+      <section class="cart-popup">
+        <div class="cart-popup__container">
+          <h2 class="cart-popup__title">Добавить<br class="cart-popup__br"> в корзину</h2>
+          <p class="cart-popup__text">Выберите размер:</p>
+          <form class="cart-popup__form" method="POST" action="https://echo.htmlacademy.ru">
+            <section class="cart-popup__wrapper">
+              <input id="size-s" class="cart-popup__input visually-hidden" name="size" type="radio" checked>
+              <label for="size-s" class="cart-popup__label">S</label>
+
+              <input id="size-m" class="cart-popup__input visually-hidden" name="size" type="radio">
+              <label for="size-m" class="cart-popup__label">M</label for="size-s">
+
+              <input id="size-l" class="cart-popup__input visually-hidden" name="size" type="radio">
+              <label for="size-l" class="cart-popup__label">L</label for="size-s">
+            </section>
+            <button class="cart-popup__button" type="submit">Добавить</button>
+          </form>
         </div>
       </section>
     </main>
@@ -192,7 +232,9 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">
-          <img class="footer__image" src="./img/logo-footer.svg" width="102" height="34" alt="Логотип Mishka">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="footer__image" width="101.615" height="34.056">
+            <use xlink:href="./img/sprite.svg#icon-footer-mishka"></use>
+          </svg>
         </a>
         <ul class="footer__item footer__item--social social list">
           <li class="social__item">
@@ -228,5 +270,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

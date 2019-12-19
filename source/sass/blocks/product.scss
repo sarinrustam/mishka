@@ -23,6 +23,14 @@
   }
 }
 
+.product__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .product__desc {
   margin: 0 0 21px 0;
   font-size: 13px;
@@ -109,6 +117,16 @@
   padding: 0;
   background-color: transparent;
   border: none;
+}
+
+.product__button:hover .product__icon {
+  fill: $seafoam-blue;
+  opacity: 1;
+}
+
+.product__button:active .product__icon {
+  fill: $seafoam-blue;
+  opacity: 0.3;
 }
 
 .product__icon {

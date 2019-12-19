@@ -24,3 +24,11 @@
     font-size: 15px;
   }
 }
+
+.addition-list__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.addition-list__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}

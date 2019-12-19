@@ -259,13 +259,18 @@
   }
 }
 
+.order__checkbox-label:hover::before  {
+  border: solid 2px #62d1ba;
+}
+
+.order__checkbox-label:active::before  {
+  border: solid 2px $greyish-brown;
+  opacity: 0.3;
+}
+
 .order__checkbox-input:checked + .order__checkbox-label::after {
   display: block;
 }
-
-// .order__checkbox-input:disabled + .order__checkbox-label::after {
-
-// }
 
 .order__checkbox-input:checked:disabled + .order__checkbox-label::after {
   display: block;
@@ -328,6 +333,15 @@
   }
 }
 
+.order__radio-label:hover::before  {
+  border: solid 2px #62d1ba;
+}
+
+.order__radio-label:active::before  {
+  border: solid 2px $greyish-brown;
+  opacity: 0.3;
+}
+
 .order__radio-input:checked + .order__radio-label::after {
   display: block;
 }
@@ -350,8 +364,9 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     padding: 18px 14px 17px 14px;
-    background-color: $white-two;
     width: auto;
+    z-index: 2;
+    background-color: transparent;
   }
 
   &::placeholder {
@@ -361,7 +376,6 @@
     font-weight: normal;
     text-align: left;
     color: $greyish-brown-30;
-    opacity: 0.3;
   }
 
   &--phone {
@@ -375,7 +389,6 @@
     line-height: 18px;
     font-weight: normal;
     color: $greyish-brown-30;
-    opacity: 0.3;
   }
 
   &--email::placeholder {
@@ -383,8 +396,27 @@
     line-height: 18px;
     font-weight: normal;
     color: $greyish-brown-30;
-    opacity: 0.3;
   }
+}
+
+.order__input:hover {
+  box-shadow: inset 0px -2px 0 0 #62d1ba;
+}
+
+.order__input:focus {
+  box-shadow: inset 0px -2px 0 0 #62d1ba;
+  outline: none;
+}
+
+.order__input:hover + .order__icon,
+.order__icon:hover {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.order__input:focus + .order__icon {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 .order__comment::placeholder {
@@ -494,6 +526,7 @@
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 10px;
+  color: $greyish-brown;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 3px;
@@ -503,6 +536,18 @@
   @media (min-width: $desktop-width) {
     margin-top: 2px;
   }
+}
+
+.order__comment:hover {
+  box-shadow: inset 0px -2px 0 0 #000000;
+  border: solid 2px #62d1ba;
+  outline: none;
+}
+
+.order__comment:focus {
+  box-shadow: inset 0px -2px 0 0 #000000;
+  border: solid 2px #62d1ba;
+  outline: none;
 }
 
 .order__wrap {

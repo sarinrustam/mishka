@@ -55,7 +55,7 @@ gulp.task("start", gulp.series("css", "server"));
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    // "source/img/**",
     "source/js",
     "source/*.ico"
   ], {
@@ -70,6 +70,7 @@ gulp.task("clean", function() {
 
 gulp.task("create-sprite", function() {
   return gulp.src("source/img/icon-*.svg")
+    .pipe(imagemin([imagemin.svgo()]))
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -107,6 +108,8 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "webp",
+  "images",
   "create-sprite",
   "html"
 ));

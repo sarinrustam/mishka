@@ -11,7 +11,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <nav class="navigation navigation--open">
+      <nav class="navigation navigation--no-js">
         <div class="navigation__row">
             <a class="header__link">
               <picture>
@@ -75,13 +75,13 @@
           <li class="menu__item menu__item--left">
             <a class="menu__link" href="#">Предметы<br> интерьера</a>
             <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="menu__icon" width="40.219" height="62.411">
-              <use xlink:href="./img/sprite.svg#icon-intro"></use>
+              <use xlink:href="./img/sprite.svg#icon-intro-interior"></use>
             </svg>
           </li>
           <li class="menu__item menu__item--right">
             <a class="menu__link" href="#">Детские<br> игрушки</a>
             <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="menu__icon menu__icon--right" width="60px" height="59.62px">
-              <use xlink:href="./img/sprite.svg#icon-intro--right"></use>
+              <use xlink:href="./img/sprite.svg#icon-intro-toy"></use>
             </svg>
           </li>
         </ul>
@@ -204,17 +204,39 @@
         </div>
         <a class="about__send-link button">Напишите нам</a>
       </section>
+
+      <section class="cart-popup">
+        <div class="cart-popup__container">
+          <h2 class="cart-popup__title">Добавить<br class="cart-popup__br"> в корзину</h2>
+          <p class="cart-popup__text">Выберите размер:</p>
+          <form class="cart-popup__form" method="POST" action="https://echo.htmlacademy.ru">
+            <section class="cart-popup__wrapper">
+              <input id="size-s" class="cart-popup__input visually-hidden" name="size" type="radio" checked>
+              <label for="size-s" class="cart-popup__label">S</label>
+
+              <input id="size-m" class="cart-popup__input visually-hidden" name="size" type="radio">
+              <label for="size-m" class="cart-popup__label">M</label for="size-s">
+
+              <input id="size-l" class="cart-popup__input visually-hidden" name="size" type="radio">
+              <label for="size-l" class="cart-popup__label">L</label for="size-s">
+            </section>
+            <button class="cart-popup__button" type="submit">Добавить</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">
-          <img class="footer__image" src="./img/logo-footer.svg" width="102" height="34" alt="Логотип Mishka">
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="footer__image" width="101.615" height="34.056">
+            <use xlink:href="./img/sprite.svg#icon-footer-mishka"></use>
+          </svg>
         </a>
         <ul class="footer__item footer__item--social social list">
           <li class="social__item">
             <a class="social__link social__link--instagram">
-              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="" width="21.769px" height="21.334px">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="" width="21.769" height="21.334">
                 <use xlink:href="./img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -245,5 +267,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -105,8 +105,17 @@
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
-    border-bottom: 1px solid $seafoam-blue;
+    border-bottom: 1px solid #46c1ae;
   }
+}
+
+.about__email-link:hover {
+  color: #46c1ae;
+}
+
+.about__email-link:active {
+  color: rgba(70, 193, 174, 0.3);
+  border-bottom: 1px solid rgba(70, 193, 174, 0.1);
 }
 
 .about__text {

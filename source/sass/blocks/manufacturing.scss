@@ -33,6 +33,14 @@
   }
 }
 
+.manufacturing__wrapper:hover {
+  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.manufacturing__wrapper:active {
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .manufacturing__title {
   font-size: 17px;
   font-weight: bold;
@@ -43,8 +51,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin: 0 -1px 33px;
-    padding: 37px 0 0 106px;
+    margin: 0px -1px 32px;
+    padding: 38px 0 0 106px;
     background: url("../img/icon-video.svg") 42px 32px no-repeat;
   }
 
@@ -59,7 +67,7 @@
 .manufacturing__text {
   font-size: 13px;
   text-align: left;
-  margin: 27px 34px 25px;
+  margin: 21px 34px 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -97,6 +105,9 @@
 }
 
 .manufacturing__video {
+  display: block;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     order: -1;
     width: 668px;
@@ -109,5 +120,38 @@
     left: 0;
     width: 682px;
     height: 455px;
+  }
+}
+
+.manufacturing__icon {
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+  }
+}
+
+.manufacturing__video .manufacturing__icon:hover {
+  width: 121px;
+  height: 92px
+}
+
+.manufacturing__video .manufacturing__icon:active {
+  width: 81px;
+  height: 62px;
+  opacity: 0.3;
+}
+
+.manufacturing__image {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 682px;
   }
 }

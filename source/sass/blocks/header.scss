@@ -16,6 +16,14 @@
   }
 }
 
+.header__link:hover {
+  opacity: 0.6;
+}
+
+.header__link:active {
+  opacity: 0.3;
+}
+
 .header__image {
   @media (min-width: $tablet-width) {
     width: 112px;

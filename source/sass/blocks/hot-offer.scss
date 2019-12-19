@@ -193,3 +193,12 @@
     width: 100%;
   }
 }
+
+.hot-offer__button:hover {
+  color: $white;
+  background-color: $greyish-brown;
+}
+
+.hot-offer__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}

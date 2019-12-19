@@ -1,5 +1,10 @@
 
 .navigation {
+  position: absolute;
+  width: 100%;
+  background-color: $white;
+  z-index: 1;
+
   @media (min-width: $tablet-width) {
     display: flex;
     position: relative;
@@ -10,6 +15,47 @@
   @media (min-width: $desktop-width) {
     max-width: 1150px;
     margin: 0 auto;
+  }
+
+  &--no-js {
+    position: static;
+  }
+
+  &--no-js .navigation__toggle {
+    display: none;
+  }
+
+  &--no-js .header__link {
+    margin-left: 0;
+    transform: translateX(0);
+  }
+
+  &--hide .user__list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  &--hide .site__list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  &--hide {
+    position: relative;
+  }
+
+  &--hide .navigation__toggle-icon--open {
+    display: block;
+  }
+
+  &--hide .navigation__toggle-icon--close {
+    display: none;
   }
 }
 

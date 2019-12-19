@@ -17,3 +17,12 @@
 .social__link {
   line-height: 0;
 }
+
+.social__link:hover svg {
+  fill: #46c1ae;
+}
+
+.social__link:active svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}

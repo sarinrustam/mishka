@@ -1,0 +1,112 @@
+.cart-popup {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  &--open {
+    display: flex;
+    z-index: 1;
+  }
+}
+
+.cart-popup__container {
+  padding: 30px 30px 46px 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+  background-color: $white;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 108px 46px 108px;
+    width: 566px;
+  }
+}
+
+.cart-popup__label {
+  display: block;
+  width: 82px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  color: $greyish-brown;
+  padding: 20px 0;
+  background-color: $white;
+  border: solid 2px rgba(68, 68, 68, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.cart-popup__label:hover {
+  border: solid 2px rgba(68, 68, 68, 0.3);
+}
+
+.cart-popup__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 31px;
+}
+
+.cart-popup__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: $black-three;
+  margin: 0 0 16px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin: 0 0 19px 0;
+  }
+
+}
+
+.cart-popup__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: $greyish-brown;
+  margin: 0 0 21px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+
+  }
+}
+
+.cart-popup__button {
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: $white;
+  padding: 18px 0;
+  width: 100%;
+  background-color: $seafoam-blue;
+  text-transform: uppercase;
+  border: none;
+}
+
+.cart-popup__br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.cart-popup__input:checked + .cart-popup__label {
+  border: solid 2px $seafoam-blue;
+}

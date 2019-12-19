@@ -44,3 +44,11 @@
     }
   }
 }
+
+.products__item:hover {
+  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.products__item:active {
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+}

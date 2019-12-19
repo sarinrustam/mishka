@@ -34,6 +34,17 @@
   left: 41px;
   transform: translateX(-50%);
   opacity: 0.2;
+  fill: #231F20;
+}
+
+.user-list__link:hover .user-list__icon {
+  opacity: 1;
+  fill: $seafoam-blue;
+}
+
+.user-list__link:active .user-list__icon {
+  opacity: 0.3;
+  fill: $seafoam-blue;
 }
 
 .user-list__link {
@@ -53,6 +64,14 @@
     padding: 0 0 0 81px;
     min-height: 88px;
   }
+}
+
+.user-list__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-list__link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-list__item--search a {
