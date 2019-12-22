@@ -3,6 +3,7 @@ let menu = document.querySelector('.navigation');
 let popup = document.querySelector('.cart-popup');
 let hotOfferButton = document.querySelector('.hot-offer__button');
 let productButton = document.querySelectorAll('.product__button');
+var popupContainer = document.querySelector('.cart-popup__container');
 
 menu.classList.remove('navigation--no-js');
 menu.classList.add('navigation--hide');

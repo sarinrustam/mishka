@@ -527,6 +527,7 @@
   width: 100%;
   margin-bottom: 10px;
   color: $greyish-brown;
+  resize : none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 3px;
@@ -539,13 +540,11 @@
 }
 
 .order__comment:hover {
-  box-shadow: inset 0px -2px 0 0 #000000;
   border: solid 2px #62d1ba;
   outline: none;
 }
 
 .order__comment:focus {
-  box-shadow: inset 0px -2px 0 0 #000000;
   border: solid 2px #62d1ba;
   outline: none;
 }

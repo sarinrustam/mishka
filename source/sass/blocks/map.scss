@@ -20,3 +20,9 @@
     width: 100%;
   }
 }
+
+.map__image iframe {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

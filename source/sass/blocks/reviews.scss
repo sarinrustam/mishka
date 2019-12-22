@@ -16,9 +16,10 @@
     box-sizing: border-box;
   }
 
-  @media (min-width: 768px) and (min-resolution: $retina) {
+  @media (min-width: 768px) and (min-resolution: $retina), (min-resolution: $retina-dpi) {
     background-image: url("../img/review@2x.jpg");
     background-size: 350px 457px;
+    background-repeat: no-repeat;
   }
 }
 

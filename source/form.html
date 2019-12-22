@@ -170,7 +170,7 @@
         <section class="order__section">
           <div class="order__wrapper-center">
             <h3 class="order__title order__title--addition">ДОП</h3>
-            <textarea class="order__comment" type="textarea" name="comment" value="" cols="32" rows="12" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="order__comment" name="comment" cols="32" rows="12" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </section>
 
@@ -186,7 +186,7 @@
           <h2 class="cart-popup__title">Добавить<br class="cart-popup__br"> в корзину</h2>
           <p class="cart-popup__text">Выберите размер:</p>
           <form class="cart-popup__form" method="POST" action="https://echo.htmlacademy.ru">
-            <section class="cart-popup__wrapper">
+            <div class="cart-popup__wrapper">
               <input id="size-s" class="cart-popup__input visually-hidden" name="size" type="radio" checked>
               <label for="size-s" class="cart-popup__label">S</label>
 
@@ -195,7 +195,7 @@
 
               <input id="size-l" class="cart-popup__input visually-hidden" name="size" type="radio">
               <label for="size-l" class="cart-popup__label">L</label for="size-s">
-            </section>
+            </div>
             <button class="cart-popup__button" type="submit">Добавить</button>
           </form>
         </div>

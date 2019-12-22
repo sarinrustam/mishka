@@ -30,7 +30,7 @@
     transform: translateX(0);
   }
 
-  &--hide .user__list {
+  &--hide .user-list {
     display: none;
 
     @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
     }
   }
 
-  &--hide .site__list {
+  &--hide .site-list {
     display: none;
 
     @media (min-width: $tablet-width) {
@@ -48,6 +48,7 @@
 
   &--hide {
     position: relative;
+    background-color: transparent;
   }
 
   &--hide .navigation__toggle-icon--open {
@@ -70,12 +71,14 @@
     padding-left: 51px;
     box-sizing: border-box;
     flex-grow: 1;
+    width: calc(100% - 400px);
   }
 
   @media (min-width: $desktop-width) {
     order: 1;
     width: 20%;
     justify-content: center;
+    width: auto;
   }
 }
 

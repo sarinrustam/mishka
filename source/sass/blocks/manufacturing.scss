@@ -20,9 +20,11 @@
   flex-direction: column;
   background: url("../img/icon-video.svg") 34px 29px no-repeat;
   border: solid 1px $white-four;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     background: none;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +32,7 @@
     position: relative;
     padding: 95px 57px 59px 759px;
     background: url("../img/icon-video.svg") 761px 41px no-repeat;
+    width: auto;
   }
 }
 
@@ -110,8 +113,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
-    width: 668px;
-    height: 455px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,8 +149,8 @@
 
 .manufacturing__image {
   @media (min-width: $tablet-width) {
-    width: 668px;
-    height: 455px;
+    width: 100%;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {

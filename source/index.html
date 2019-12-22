@@ -199,18 +199,23 @@
                 д. 19/8, офис 101</p>
           </div>
           <section class="map">
-            <img class="map__image" src="./img/map-mobile@1x.jpg" width="320" height="457" alt="Наши координаты">
+            <h2 class="visually-hidden">Карта</h2>
+            <!-- <img class="map__image" src="./img/map-mobile@1x.jpg" width="320" height="457" alt="Наши координаты"> -->
+            <div class="map__image">
+              <iframe src="https://yandex.ru/map-widget/v1/-/CGt6ZK03" width="320" height="457" style="border:0;" allowfullscreen></iframe>
+            </div>
           </section>
         </div>
         <a class="about__send-link button">Напишите нам</a>
       </section>
 
       <section class="cart-popup">
+        <h2 class="visually-hidden">Корзина</h2>
         <div class="cart-popup__container">
-          <h2 class="cart-popup__title">Добавить<br class="cart-popup__br"> в корзину</h2>
+          <h3 class="cart-popup__title">Добавить<br class="cart-popup__br"> в корзину</h3>
           <p class="cart-popup__text">Выберите размер:</p>
           <form class="cart-popup__form" method="POST" action="https://echo.htmlacademy.ru">
-            <section class="cart-popup__wrapper">
+            <div class="cart-popup__wrapper">
               <input id="size-s" class="cart-popup__input visually-hidden" name="size" type="radio" checked>
               <label for="size-s" class="cart-popup__label">S</label>
 
@@ -219,7 +224,7 @@
 
               <input id="size-l" class="cart-popup__input visually-hidden" name="size" type="radio">
               <label for="size-l" class="cart-popup__label">L</label for="size-s">
-            </section>
+            </div>
             <button class="cart-popup__button" type="submit">Добавить</button>
           </form>
         </div>
