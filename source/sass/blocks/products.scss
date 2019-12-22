@@ -12,6 +12,7 @@
     padding: 116px 0 0 0;
     max-width: 1050px;
     margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
 
@@ -43,7 +44,7 @@
     width: 316px;
     margin-bottom: 57px;
 
-    &:last-child {
+    &:nth-child(3n){
       margin-right: 0;
     }
   }
