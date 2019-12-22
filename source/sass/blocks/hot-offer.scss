@@ -64,6 +64,8 @@
 
 .hot-offer__image {
   margin-bottom: 19px;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -135,10 +137,10 @@
 .hot-offer__table {
   margin-bottom: 28px;
   border-collapse: collapse;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
-    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,10 +156,12 @@
 .hot-offer__table-field {
   line-height: 20px;
   text-align: left;
-  padding: 10px 27px 9px 0;
+  padding: 10px 0 9px;
+  width: 97px;
 
   @media (min-width: $tablet-width) {
     padding: 9px 0 10px 3px;
+    width: auto;
   }
 }
 

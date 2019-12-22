@@ -16,7 +16,7 @@
     box-sizing: border-box;
   }
 
-  @media (min-width: 768px) and (min-resolution: $retina), (min-resolution: $retina-dpi) {
+  @media (min-width: $tablet-width) and (min-resolution: $retina), (min-width: $tablet-width) and (min-resolution: $retina-dpi) {
     background-image: url("../img/review@2x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
@@ -109,8 +109,10 @@
 
 .reviews__buttons {
   border: 1px solid $white-four;
-  margin-bottom: 36px;
-  width: 260px;
+  margin-bottom: 38px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     order: 6;
@@ -123,17 +125,18 @@
 }
 
 .reviews__button {
-  padding: 5px 39px 5px 37px;
+  padding: 0;
+  width: 50%;
   box-sizing: border-box;
   background-color: $white;
-  min-height: 52px;
+  min-height: 50px;
   border: none;
 
-  &:first-child {
-    border-right: 1px solid $white-four;
+  &:last-child {
+    border-left: 1px solid $white-four;
 
     @media (min-width: $tablet-width) {
-      border-right: none;
+      border-left: none;
     }
   }
 
@@ -157,7 +160,7 @@
   font-weight: bold;
   text-align: center;
   color: $greyish-brown;
-  width: 260px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
@@ -166,6 +169,7 @@
     padding: 14px 38px;
     font-size: 17px;
     margin: 2px -2px 0 0;
+    width: 175px;
   }
 
   @media (min-width: $desktop-width) {
