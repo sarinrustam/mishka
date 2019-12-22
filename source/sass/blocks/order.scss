@@ -259,11 +259,11 @@
   }
 }
 
-.order__checkbox-label:hover::before  {
+.order__checkbox-label:hover::before {
   border: solid 2px #62d1ba;
 }
 
-.order__checkbox-label:active::before  {
+.order__checkbox-label:active::before {
   border: solid 2px $greyish-brown;
   opacity: 0.3;
 }
@@ -333,11 +333,11 @@
   }
 }
 
-.order__radio-label:hover::before  {
+.order__radio-label:hover::before {
   border: solid 2px #62d1ba;
 }
 
-.order__radio-label:active::before  {
+.order__radio-label:active::before {
   border: solid 2px $greyish-brown;
   opacity: 0.3;
 }
@@ -400,11 +400,11 @@
 }
 
 .order__input:hover {
-  box-shadow: inset 0px -2px 0 0 #62d1ba;
+  box-shadow: inset 0 -2px 0 0 #62d1ba;
 }
 
 .order__input:focus {
-  box-shadow: inset 0px -2px 0 0 #62d1ba;
+  box-shadow: inset 0 -2px 0 0 #62d1ba;
   outline: none;
 }
 
@@ -527,7 +527,7 @@
   width: 100%;
   margin-bottom: 10px;
   color: $greyish-brown;
-  resize : none;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 3px;

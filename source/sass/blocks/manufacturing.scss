@@ -37,11 +37,11 @@
 }
 
 .manufacturing__wrapper:hover {
-  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .manufacturing__wrapper:active {
-  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .manufacturing__title {
@@ -54,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin: 0px -1px 32px;
+    margin: 0 -1px 32px;
     padding: 38px 0 0 106px;
     background: url("../img/icon-video.svg") 42px 32px no-repeat;
   }
@@ -129,7 +129,7 @@
   position: absolute;
   top: calc(50% - 3px);
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
     top: 50%;
@@ -138,7 +138,7 @@
 
 .manufacturing__video .manufacturing__icon:hover {
   width: 121px;
-  height: 92px
+  height: 92px;
 }
 
 .manufacturing__video .manufacturing__icon:active {
