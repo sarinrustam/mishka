@@ -28,7 +28,15 @@
 }
 
 .menu__item:hover {
-  margin-top: -5px;
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+  }
+}
+
+.menu__item:hover .menu__link {
+  @media (min-width: $tablet-width) {
+  padding-bottom: 35px;
+  }
 }
 
 .menu__item--left:hover {
@@ -48,7 +56,7 @@
 }
 
 .menu__link {
-  display: block;
+  display: flex;
   box-sizing: border-box;
   font-size: 19px;
   font-weight: bold;
@@ -56,10 +64,12 @@
   color: $white;
   text-decoration: none;
   width: 100%;
-  padding: 25px 90px 30px 29px;
+  padding: 18px 57px 24px 29px;
+  align-items: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 28px 0 34px 36px;
+    padding: 28px 35px 32px 36px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -69,22 +79,12 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.menu__item:hover .menu__link {
-  padding-bottom: 35px;
-}
-
 .menu__icon {
-  position: absolute;
   opacity: 0.5;
   fill: $blue-green;
-  right: 57px;
-  top: 50%;
-  transform: translate(50%, -50%);
+  transform: translateX(50%);
 
-  &--right {
-    @media (min-width: $tablet-width) {
-      top: 61px;
-      right: 64px;
-    }
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
   }
 }

@@ -1,14 +1,13 @@
 @import "../../node_modules/normalize.css/normalize";
 @import "variables";
 @import "font-face";
-@import "./visually-hidden";
-@import "text";
+@import "./blocks/visually-hidden";
+@import "./blocks/text";
 @import "./blocks/list";
 @import "./blocks/title";
 @import "./blocks/page";
 @import "./blocks/button";
 // index.html
-@import "./blocks/header";
 @import "./blocks/site-list";
 @import "./blocks/user-list";
 @import "./blocks/navigation";

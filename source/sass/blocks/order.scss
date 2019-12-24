@@ -392,7 +392,7 @@
   }
 
   &--email::placeholder {
-    font-size: 19px;
+    font-size: 17px;
     line-height: 18px;
     font-weight: normal;
     color: $greyish-brown-30;
@@ -468,14 +468,14 @@
   margin: 0 0 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 51px 9px 0;
+    margin: 60px 51px 9px 0;
     font-size: 17px;
     line-height: 30px;
-    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 109px 0 11px 111px;
+    margin: 109px 0 11px 111px;
   }
 }
 

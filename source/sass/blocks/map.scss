@@ -16,13 +16,7 @@
   }
 }
 
-.map__image {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-}
-
-.map__image iframe {
+.map iframe {
   @media (min-width: $tablet-width) {
     width: 100%;
   }

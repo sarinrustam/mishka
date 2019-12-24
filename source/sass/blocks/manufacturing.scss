@@ -110,6 +110,8 @@
 .manufacturing__video {
   display: block;
   position: relative;
+  font-size: 0;
+  line-height: 0;
 
   @media (min-width: $tablet-width) {
     order: -1;
