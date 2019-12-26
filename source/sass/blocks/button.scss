@@ -5,6 +5,7 @@
   width: 100%;
   display: inline-block;
   text-transform: uppercase;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: auto;
