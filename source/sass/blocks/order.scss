@@ -141,10 +141,10 @@
   color: $seafoam-blue;
   width: 100%;
   margin: 0 0 26px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 167px;
-    text-transform: uppercase;
   }
 
   @media (min-width: $desktop-width) {
