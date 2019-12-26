@@ -97,6 +97,11 @@
 
 .about__adress {
   margin: 0;
+  max-width: 141px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 221px;
+  }
 }
 
 .about__email-link {
@@ -172,11 +177,5 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 29px;
-  }
-}
-
-.about__br {
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

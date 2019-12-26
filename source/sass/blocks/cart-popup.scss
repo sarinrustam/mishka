@@ -25,7 +25,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 108px 46px 108px;
-    width: 566px;
+    width: 572px;
   }
 }
 
@@ -64,6 +64,7 @@
   text-align: center;
   color: $black-three;
   margin: 0 0 16px 0;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -107,4 +108,11 @@
 
 .cart-popup__input:checked + .cart-popup__label {
   border: solid 2px $seafoam-blue;
+}
+
+.cart-popup__form {
+  @media (min-width: $tablet-width) {
+    max-width: 350px;
+    margin: 0 auto;
+  }
 }
