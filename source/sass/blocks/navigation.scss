@@ -1,19 +1,9 @@
 .navigation {
-  padding-top: 80px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-
-  &--no-js .navigation__wrap {
-    position: static;
-  }
-
   &--no-js .navigation__toggle {
     display: none;
   }
 
-  &--no-js .header__link {
+  &--no-js .navigation__link {
     margin-left: 0;
     transform: translateX(0);
   }
@@ -53,11 +43,8 @@
 }
 
 .navigation__wrap {
-  position: absolute;
   width: 100%;
   background-color: $white;
-  z-index: 1;
-  top: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
