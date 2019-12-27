@@ -62,13 +62,13 @@
       @media (min-width: $desktop-width) {
         height: 34px;
         bottom: -14px;
-        background: url("../img/bg-zigzag-fill@1x.png") center 0 no-repeat;
-        background-size: 1150px 34px;
+        background: url(../img/bg-zigzag-fill@1x.png) center 0 repeat-x;
+        background-size: 100% 34px;
       }
 
       @media (min-width: $desktop-width) and (min-resolution: $retina), (min-width: $desktop-width) and (min-resolution: $retina-dpi) {
-        background: url("../img/bg-zigzag-fill@2x.png") center 0 no-repeat;
-        background-size: 1150px 34px;
+        background: url("../img/bg-zigzag-fill@2x.png") center 0 repeat-x;
+        background-size: 100% 34px;
       }
     }
 
