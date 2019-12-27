@@ -127,11 +127,16 @@
   }
 }
 
-.manufacturing__icon {
+.manufacturing__button {
   position: absolute;
   top: calc(50% - 3px);
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  background-color:
+  transparent;
+  border: none;
 
   @media (min-width: $tablet-width) {
     top: calc(50% - 3px);
