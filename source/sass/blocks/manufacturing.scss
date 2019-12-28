@@ -64,6 +64,7 @@
     font-size: 20px;
     padding: 0;
     background: none;
+    max-width: 155px;
   }
 }
 
@@ -163,5 +164,6 @@
 
   @media (min-width: $desktop-width) {
     width: 682px;
+    height: 455px;
   }
 }
