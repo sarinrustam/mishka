@@ -122,6 +122,11 @@
     min-height: 88px;
     box-sizing: border-box;
   }
+
+  @media (min-width: $desktop-width)  {
+    margin-left: -52px;
+    padding: 9px 0 0;
+  }
 }
 
 .navigation__link:hover {
@@ -142,6 +147,6 @@
   @media (min-width: $desktop-width) {
     width: 149px;
     height: 72px;
-    margin: -16px 0 0 -52px;
+    margin: 0;
   }
 }
